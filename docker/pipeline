@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building docker image'
+            }
+        }
+        stage('Publish') {
+            steps {
+                echo 'Publishing docker image to docker hub'
+            }
+        }
+    }
+}
